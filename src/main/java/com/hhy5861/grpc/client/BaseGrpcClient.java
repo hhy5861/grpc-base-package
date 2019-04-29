@@ -1,10 +1,10 @@
-package com.mike.grpc.client;
+package com.hhy5861.grpc.client;
 
 import com.hhy5861.common.tools.Response;
-import com.mike.grpc.model.BaseGrpcResponse;
-import com.mike.grpc.model.FastJsonSerialize;
-import com.mike.grpc.model.IGrpcSerialize;
-import com.mike.grpc.proto.GrpcResponse;
+import com.hhy5861.grpc.service.impl.BaseGrpcResponse;
+import com.hhy5861.grpc.service.impl.FastJsonSerialize;
+import com.hhy5861.grpc.service.IGrpcSerialize;
+import com.hhy5861.grpc.proto.GrpcResponse;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 

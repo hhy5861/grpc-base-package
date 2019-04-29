@@ -1,6 +1,7 @@
-package com.mike.grpc.model;
+package com.hhy5861.grpc.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.hhy5861.grpc.service.IGrpcSerialize;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

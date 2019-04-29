@@ -1,6 +1,7 @@
-package com.mike.grpc.model;
+package com.hhy5861.grpc.service.impl;
 
-import com.mike.grpc.proto.GrpcResponse;
+import com.hhy5861.grpc.proto.GrpcResponse;
+import com.hhy5861.grpc.service.IGrpcSerialize;
 
 import java.io.Serializable;
 
