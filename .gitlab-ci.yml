@@ -1,0 +1,22 @@
+image: hhy5861/java-ci:1.0.1
+
+stages:
+  - build
+
+snapshot:
+  stage: build
+  script:
+    - mvn clean deploy -Dmaven.test.skip=true -Dversion=0.0.1-SNAPSHOT
+  tags:
+    - develop
+  only:
+    - Alpha
+
+releases:
+  stage: build
+  script:
+    - mvn clean deploy -Dmaven.test.skip=true -Dversion=${CI_COMMIT_TAG}-RELEASE
+  tags:
+    - beta
+  only:
+    - tags
